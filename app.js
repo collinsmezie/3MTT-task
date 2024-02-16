@@ -140,10 +140,19 @@ app.post('/verify', (req, res) => {
 });
 
 
-//handle the logout request
+// Handle logout request with redirect to login page using passport
+
+// app.get('/logout', (req, res) => {
+//   req.logout();
+//   res.redirect('/login');
+// });
+
+
+
 app.get('/logout', (req, res) => {
-  req.logout();
-  res.render('/login');
+  // req.logout();
+  req.session.destroy()
+  res.render('index')
 });
 
 

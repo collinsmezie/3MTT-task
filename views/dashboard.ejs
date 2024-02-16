@@ -7,8 +7,15 @@
     <title>Dashboard</title>
 </head>
 <body>
+
+    <div class="fixed top-0 right-0 p-4">
+        <a href="/logout" class="bg-red-500 hover:bg-red-600 text-white py-2 px-4 rounded-md">Log Out</a>  
+      </div>
+      
+    <!-- <a href="/logout" class="bg-red-500 hover:bg-red-600 text-white py-2 px-4 rounded-md mr-4">log out</a> -->
     <div class="container mx-auto p-4">
         <h1 class="text-2xl font-bold mb-4">DASHBOARD</h1>
+
         <br>
         <h2 class="text-2xl font-bold mb-4">Welcome <i><%= user.username %></i></h2>
         <div class="bg-white shadow-md rounded-lg p-4">
